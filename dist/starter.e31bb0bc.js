@@ -24032,7 +24032,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // const element = React.createElement("div", null, "React element!");
 var element = _react.default.createElement("div", null, "React element with JSX!");
 
-_reactDom.default.render(element, document.getElementById("root"));
+_reactDom.default.render(element, document.getElementById("root")); // ******* Promise example. How FETCH works under the hood ********
+// new Promise((resolve, reject) => {
+//     return reject(new Error("No bears"));
+//     setTimeout(() => {
+//         resolve("Bears, Beets, Battlestar Galactica");
+//     }, 2000);
+// })
+// .then(quote => {
+//     console.log(quote);
+// })
+// .catch(error => console.log("error", error));
 },{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -24060,7 +24070,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57851" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53673" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
